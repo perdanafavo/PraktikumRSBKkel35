@@ -7,12 +7,29 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Error Page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ERROR 404</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script> 
+    <style>
+        body, html {
+            background-image: url(img/404.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .container {
+            margin-top: 100px;            
+        }
+        .panel {
+            background-color: aliceblue;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+        }
+    </style>
 </head>
-<body>
-<h1>Error - <%=request.getAttribute("error")%> </h1>
-</body>
 </html>
 
